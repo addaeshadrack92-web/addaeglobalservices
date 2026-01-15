@@ -1,0 +1,29 @@
+const data = [
+    {
+        "name": "Bej Fashion Hub",
+        "category": "Fashion",
+        "country": "Ghana",
+        "description": "Online clothing brand with international styles.",
+        "image": "product-12-fashion(2).png, product-13-fashion.png, product-14-fashion.png, product-15-fashion.png",
+        "contact": "WhatsApp: +233556845227"
+    },
+    {
+        "name": "Key Experts",
+        "category": "Technology",
+        "country": "Ghana",
+        "description": "Car Key Programing, Key Duplication, Car Alarm, Vehicle Tracking, Tire Sensor Programming, Auto Lock Servicing",
+        "image": "product-06-key-experts.jpg",
+        "contact": "+233244282181"
+    },
+    {
+        "name": "E&L Beauty Essentials",
+        "category": "Cosmetology",
+        "country": "Ghana",
+        "description": "skin and body growth",
+        "image": "product-01-eye-mask.jpg, product-02-face-mud.jpg, product-03-face-sheet.jpg",
+        "contact": ""
+    }
+];
+
+// Then use the same rendering code as before:
+data.forEach(business => { /* create cards */ });

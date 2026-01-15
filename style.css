@@ -1,0 +1,223 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #0aa63f;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+/* ===== Cards & Sections ===== */
+.services, .partners, .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card, .partner-card, .pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover, .partner-card:hover, .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0aa63f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #088a34;
+    transform: translateY(-2px);
+}
+
+.btn-pay {
+    background-color: #1a73e8;
+}
+
+.btn-pay:hover {
+    background-color: #1558b0;
+}
+
+/* ===== Pricing Highlight ===== */
+.price-card.featured {
+    border: 2px solid #0d6efd;
+    background: #f4f8ff;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ===== Forms ===== */
+.business-form, .video-submit {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.business-form label,
+.video-submit label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.business-form input,
+.business-form textarea,
+.business-form select,
+.video-submit input,
+.video-submit textarea,
+.video-submit select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.business-form button,
+.video-submit button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-submit button {
+    background: #25D366;
+    color: #fff;
+}
+
+.video-submit button:hover {
+    background: #0844a5;
+}
+
+/* ===== WhatsApp Floating Button ===== */
+.Whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.Whatsapp-float:hover {
+    background: #128c7e;
+}
+
+/* ===== Back Home Link ===== */
+.back-home {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0a58ca;
+    font-weight: 600;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+/* ===== Videos ===== */
+.video-submit video {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: #000;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0aa63f;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .services, .partners, .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .partner-card, .pricing-card {
+        width: 90%;
+    }
+}

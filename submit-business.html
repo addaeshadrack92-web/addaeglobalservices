@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Business | Addae Global Services</title>
+    <meta name="description" content="Global shipping assistance and business promotion platform. Secure Paystack payments.">
+    <meta name="keywords" content="shipping services, business promotion, paystack Ghana, global shipping">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1>Submit Your Business Details</h1>
+        <p>Please fill in the form below after payment.</p>
+    </div>
+</header>
+
+<main class="container">
+    <form action="https://formsubmit.co/addaeglobalservices@gmail.com" method="POST" class="business-form">
+        
+        <!-- Hidden FormSubmit fields -->
+        <input type="hidden" name="_subject" value="New Business Promotion Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <input type="hidden" name="_autoresponse" value="Thank you for choosing Addae - Global Services. We have received your business details successfully. Your business will be reviewed and published within 24 hours. For urgent assistance, contact us on WhatsApp. - Addae - Global Services">
+
+        <!-- Business Name -->
+        <label for="businessName">Business Name</label>
+        <input type="text" id="businessName" name="businessName" required>
+
+        <!-- Owner / Contact Name -->
+        <label for="contactName">Owner / Contact Name</label>
+        <input type="text" id="contactName" name="contactName" required>
+
+        <!-- Email Address -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- WhatsApp Number -->
+        <label for="whatsapp">WhatsApp Number</label>
+        <input type="text" id="whatsapp" name="whatsapp" required>
+
+        <!-- Business Category -->
+        <label for="category">Business Category</label>
+        <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Cosmetics">Cosmetics</option>
+            <option value="Food">Food</option>
+            <option value="Logistics">Logistics</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- Business Description -->
+        <label for="description">Business Description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <!-- Website / Social Media -->
+        <label for="website">Website / Social Media Link (optional)</label>
+        <input type="text" id="website" name="website">
+
+        <!-- Product Image Link -->
+        <label for="image">Upload Product Image (optional link)</label>
+        <input type="text" id="image" name="image">
+
+        <button type="submit" class="btn btn-submit">Submit Business</button>
+    </form>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Addae Global Services</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Addae - Global Services | Partnership</title>
+  <style>
+    :root {
+      --primary: #1f4fd8;
+      --secondary: #f4f6fb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--secondary);
+      color: var(--text);
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    section p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    label {
+      font-size: 13px;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      border-top: 2px solid var(--secondary);
+      padding-top: 24px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    button {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+      }
+      button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Addae - Global Services</h1>
+      <p>Partnership & Collaboration Request</p>
+    </header>
+
+    <section>
+      <h2>About Our Partnerships</h2>
+      <p>
+        Addae - Global Services is not a shipping company. We operate as a
+        <strong>referral and affiliate business</strong> that connects clients with
+        trusted third-party shipping and logistics companies. We also promote partner
+        businesses and services across our websites and digital platforms.
+      </p>
+      <p>
+        Our goal is to help shipping companies, logistics providers, and related
+        businesses reach more customers while ensuring clients are directed to
+        reliable service providers.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who Can Partner With Us</h2>
+      <ul>
+        <li>Shipping and logistics companies</li>
+        <li>Freight forwarders and courier services</li>
+        <li>Customs clearing and export agents</li>
+        <li>E-commerce fulfillment providers</li>
+        <li>Businesses seeking online promotion and referrals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Partnership Benefits</h2>
+      <ul>
+        <li>Increased visibility through our websites and online channels</li>
+        <li>Qualified customer referrals without upfront advertising costs</li>
+        <li>Affiliate or referral-based commission structure</li>
+        <li>Brand exposure to international clients</li>
+        <li>Long-term promotional and referral opportunities</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Partnership Application Form</h2>
+      <div class="grid">
+        <div>
+          <label>Full Name</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>Company / Organization</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>Email Address</label>
+          <input type="email" />
+        </div>
+        <div>
+          <label>Phone / WhatsApp</label>
+          <input type="tel" />
+        </div>
+        <div>
+          <label>Country</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>Partnership Type</label>
+          <select>
+            <option>Shipping / Logistics Company</option>
+            <option>Courier or Freight Forwarder</option>
+            <option>Customs / Export Agent</option>
+            <option>Affiliate / Referral Partner</option>
+            <option>Business Promotion Partner</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="full">
+          <label>Brief Description of Your Business / Proposal</label>
+          <textarea></textarea>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="note">
+        After submission, our partnership team will review your application and
+        contact you within 2–5 business days.
+      </div>
+      <button type="button">Submit Partnership Request</button>
+    </footer>
+  </div>
+</body>
+</html>

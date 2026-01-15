@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Business Video | Addae Global Services</title>
+    <meta name="description" content="Submit your business video for promotion with Addae Global Services. Ensure you have permission to share your video.">
+    <meta name="keywords" content="business video submission, promotion, Addae Global Services">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<section class="video-submit">
+    <a href="../index.html" class="back-home">Back to Home</a>
+
+    <h2>Submit Your Business Video</h2>
+    <p>
+        Please fill out the form below to submit your business video for promotion.
+        Ensure you have permission to share this content.
+    </p>
+
+    <form action="https://formspree.io/f/coming-soon" method="post">
+
+        <label for="business_name">Business Name</label>
+        <input type="text" id="business_name" name="business_name" required>
+
+        <label for="contact_name">Contact Person</label>
+        <input type="text" id="contact_name" name="contact_name" required>
+
+        <label for="phone">Phone / WhatsApp Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+
+        <label for="video_type">Video Type</label>
+        <select id="video_type" name="video_type" required>
+            <option value="">Select one</option>
+            <option value="youtube">YouTube link</option>
+            <option value="tiktok">TikTok link</option>
+            <option value="file">Original video file (MP4)</option>
+        </select>
+
+        <label for="video_link">Video Link (YouTube or TikTok)</label>
+        <input type="url" id="video_link" name="video_link" placeholder="https://">
+
+        <label for="permission">Permission Confirmation</label>
+        <select id="permission" name="permission" required>
+            <option value="">Select</option>
+            <option value="yes">Yes, I own this video and give permission</option>
+        </select>
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Optional"></textarea>
+
+        <button type="submit">Submit Video</button>
+    </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Business Video | Addae Global Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="video-submit">
+    <a href="index.html" class="back-home">Back to Home</a>
+
+    <h2>Upload Your Business Video</h2>
+    <p>Upload your business video for promotion. Supported formats: MP4. Maximum size: 100MB.</p>
+
+    <form id="videoForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="business_name">Business Name</label>
+        <input type="text" id="business_name" name="business_name" required>
+
+        <label for="contact_name">Contact Person</label>
+        <input type="text" id="contact_name" name="contact_name" required>
+
+        <label for="phone">Phone / WhatsApp Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+
+        <label for="video_link">Video Link (YouTube or TikTok)</label>
+        <input type="url" id="video_link" name="video_link" placeholder="https://">
+
+        <label for="video_file">Upload Video (MP4)</label>
+        <input type="file" id="video_file" name="video_file" accept="video/mp4">
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Optional"></textarea>
+
+        <button type="submit">Submit Video</button>
+    </form>
+
+    <div id="status"></div>
+</section>
+
+<script>
+const form = document.getElementById('videoForm');
+const statusDiv = document.getElementById('status');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch('/upload', {
+        method: 'POST',
+        body: formData
+    });
+
+    const result = await response.json();
+
+    if(result.success){
+        statusDiv.innerHTML = `<p style="color:green;">${result.message}</p>`;
+        form.reset();
+    } else {
+        statusDiv.innerHTML = `<p style="color:red;">${result.message}</p>`;
+    }
+});
+</script>
+
+</body>
+</html>
