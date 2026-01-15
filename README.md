@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Addae-Global Services 🌍
 
@@ -46,3 +47,10 @@ We help individuals and businesses with **international shipping assistance** an
 
 ## 📁 Project Structure
 
+=======
+# Homepage
+[https://addaeshadrack92-we.github.io/addaeglobalservices/]
+
+### About page
+Shipping . Business Promotion
+>>>>>>> ea2ceb3af5b3eaab6c2f129a12b68216057069b8
