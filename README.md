@@ -1,7 +1,7 @@
-## project preview
+# Addae Global Services
 
-### Homepage
-![Homepage](images/homepage.png)
+**Official Website**
+https://addaeshadrack92-we.github.io/addaeglobalservices/
 
 ### About page
-![About](images/about.png)
+Shipping . Business Promotion . Digital Services
