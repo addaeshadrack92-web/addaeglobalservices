@@ -4,7 +4,8 @@
     <title>Addae-Global Services</title>
     <link rel="stylesheet" 
 href="style.css">
-<head>
+<head><script src="js/media-popup.js"></script>
+<script src="js/media-popup-popup.js"></script>
     <meta name="description" content="Global Shipping assistance and business promotion platform. Secure paystack payments.">
     <meta name="keywords" content="shipping services, business promotion, paystack Ghana, global shipping">
 </head>
@@ -23,7 +24,70 @@ href="style.css">
     </nav>
     </header>
 
-    <main>
+    <main><section class="promoted-section">
+    <h2>Promoted Products & Businesses</h2>
+    <p class="section-intro">
+        Discover trusted businesses and products promoted by Addae-Global Services.
+    </p>
+
+    <div class="promo-grid">
+
+        <!-- PRODUCT CARD -->
+        <div class="promo-card">
+            <img src="images/product-01-eye-mask.jpg"
+                 alt="Beauty Hub Eye Mask"
+                 class="media-trigger"
+                 data-type="image">
+
+            <h3>Beauty Hub</h3>
+            <p>Natural skincare products available for global shipping.</p>
+
+            <a href="https://wa.me/233249390050"
+               target="_blank"
+               class="btn">Contact on WhatsApp</a>
+        </div>
+
+        <!-- PRODUCT CARD -->
+        <div class="promo-card">
+            <img src="images/product-13-fashion.png"
+                 alt="Bej Fashion Collection"
+                 class="media-trigger"
+                 data-type="image">
+
+            <h3>Bej Fashion</h3>
+            <p>Quality African fashion for men and women.</p>
+
+            <a href="https://wa.me/233556845227"
+               target="_blank"
+               class="btn">Contact on WhatsApp</a>
+        </div>
+
+        <!-- VIDEO CARD -->
+        <div class="promo-card">
+            <video class="media-trigger"
+                   data-type="video"
+                   src="videos/vid-01.mp4"
+                   muted></video>
+
+            <h3>Key Experts Services</h3>
+            <p>Car key programming, tracking & security services.</p>
+
+            <a href="https://wa.me/+233544311831"
+            country="Ghana"
+               target="_blank"
+               class="btn">Contact on WhatsApp</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- MEDIA POPUP -->
+<div id="media-popup">
+    <span id="close-popup">&times;</span>
+    <img id="popup-image">
+    <video id="popup-video" controls></video>
+</div>
+
         <section class="hero">
             <h2>Global Shipping & Business Promotion Made Easy</h2>
             <p>Helping you ship worldwide and grow your business with trusted  partners.</p>
@@ -65,23 +129,6 @@ href="style.css">
                     <source src="videos/vid-01.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div
-                <img src="images/key-experts-01.jpg, key-experts-2.jpg"
-                alt="key experts promotion"
-                width="600"
-                description="car key programing, key duplication,vehicle tracking etc">
-                <div
-                <img src="images/product-01-eye- mask.jpg, product-02-face-mud.jpg"
-                alt="beauty hub promotion"
-                width="600"
-                contact="+233249390050">
-                country="Ghana>
-
-                <div
-                <img src="images/product-13-fashion.png, product-14-fashion.png, product-15-fashion.png"
-                alt="Bej fashion promotion"
-                width="600"
-                country="Ghana"
                 </div>
                 
                 </section>
