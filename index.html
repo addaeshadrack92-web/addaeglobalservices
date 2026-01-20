@@ -1,154 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Addae-Global Services</title>
+  <meta charset="UTF-8">
+  <title>Addae-Global Services</title>
 
-    <meta name="description"
-          content="Global shipping assistance and business promotion platform. Secure Paystack payments.">
-    <meta name="keywords"
-          content="shipping services, business promotion, paystack Ghana, global shipping">
+  <meta name="description"
+        content="Global shipping assistance and business promotion platform. Secure Paystack payments.">
+  <meta name="keywords"
+        content="shipping services, business promotion, paystack Ghana, global shipping">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Addae-Global Services</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shipping.html">Shipping</a>
-        <a href="business.html">Business</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-        <a href="pages/video-submit.html">Submit Your Video</a>
-        <a href="pages/video-guidelines.html">Video Guidelines</a>
-    </nav>
+  <h1>Addae-Global Services</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shipping.html">Shipping</a>
+    <a href="business.html">Business</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="pages/video-submit.html">Submit Your Video</a>
+    <a href="pages/video-guidelines.html">Video Guidelines</a>
+  </nav>
 </header>
 
 <main>
 
-<!-- PROMOTED SECTION -->
-<section class="promoted-section">
-    <h2>Promoted Products & Businesses</h2>
-    <p class="section-intro">
-        Discover trusted businesses and products promoted by Addae-Global Services.
-    </p>
+<!-- FEATURED BUSINESS -->
+<section class="featured-business">
+  <h2>🌟 Business of the Week</h2>
 
-    <div class="promo-grid">
+  <div class="featured-card">
+    <img src="images/product-13-fashion.png" alt="Bej Fashion">
 
-        <!-- CARD 1 -->
-        <div class="promo-card">
-            <img src="images/product-01-eye-mask.jpg"
-                 alt="Beauty Hub Eye Mask"
-                 class="media-trigger"
-                 data-type="image">
+    <div class="featured-info">
+      <h3>Bej Fashion <span class="verified">✔ Verified</span></h3>
+      <p>Premium African fashion shipped worldwide.</p>
 
-            <h3>Beauty Hub</h3>
-            <p>Natural skincare products available for global shipping.</p>
-
-            <a href="https://wa.me/233249390050"
-               class="btn"
-               target="_blank">Contact on WhatsApp</a>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="promo-card">
-            <img src="images/product-13-fashion.png"
-                 alt="Bej Fashion Collection"
-                 class="media-trigger"
-                 data-type="image">
-
-            <h3>Bej Fashion</h3>
-            <p>Quality African fashion for men and women.</p>
-
-            <a href="https://wa.me/233556845227"
-               class="btn"
-               target="_blank">Contact on WhatsApp</a>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="promo-card">
-            <img src="images/key-experts-01.jpg"
-            alt="key Experts promo"
-            class="media-trigger"
-            data-type="image">
-
-            <h3>Key Experts Services</h3>
-            <p>Car key programming, tracking & vehicle security services.</p>
-
-            <a href="https://wa.me/233544311831"
-               class="btn"
-               target="_blank">Contact on WhatsApp</a>
-        </div>
-
+      <a href="https://wa.me/233556845227"
+         class="btn"
+         target="_blank">Shop on WhatsApp</a>
     </div>
+  </div>
 </section>
 
-<!-- POPUP -->
+<!-- PROMOTED SECTION -->
+<section class="promoted-section">
+  <h2>Promoted Products & Businesses</h2>
+  <p class="section-intro">
+    Discover trusted businesses and products promoted by Addae-Global Services.
+  </p>
+
+  <div class="promo-grid">
+
+    <div class="promo-card">
+      <img src="images/product-01-eye-mask.jpg"
+           alt="Beauty Hub Eye Mask"
+           class="media-trigger"
+           data-type="image">
+
+      <h3>Beauty Hub</h3>
+      <p>Natural skincare products available for global shipping.</p>
+
+      <a href="https://wa.me/233249390050"
+         class="btn"
+         target="_blank">Contact on WhatsApp</a>
+    </div>
+
+    <div class="promo-card">
+      <img src="images/product-13-fashion.png"
+           alt="Bej Fashion Collection"
+           class="media-trigger"
+           data-type="image">
+
+      <h3>Bej Fashion</h3>
+      <p>Quality African fashion for men and women.</p>
+
+      <a href="https://wa.me/233556845227"
+         class="btn"
+         target="_blank">Contact on WhatsApp</a>
+    </div>
+
+    <div class="promo-card">
+      <img src="images/key-experts-01.jpg"
+           alt="Key Experts Promo"
+           class="media-trigger"
+           data-type="image">
+
+      <h3>Key Experts Services</h3>
+      <p>Car key programming, tracking & vehicle security services.</p>
+
+      <a href="https://wa.me/233544311831"
+         class="btn"
+         target="_blank">Contact on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/loader.js"></script>
+
+<!-- MEDIA POPUP -->
 <div id="media-popup">
-    <span id="close-popup">&times;</span>
-    <img id="popup-image">
-    <video id="popup-video" controls></video>
+  <span id="close-popup">&times;</span>
+  <img id="popup-image">
+  <video id="popup-video" controls></video>
 </div>
+
+<!-- TRENDING VIDEOS -->
+<section class="video-feed">
+  <h2>🔥 Trending Business Videos</h2>
+
+  <div class="video-grid">
+    <video src="videos/vid-01.mp4" muted controls></video>
+    <video src="videos/vid-02.mp4" muted controls></video>
+    <video src="videos/vid-03.mp4" muted controls></video>
+  </div>
+</section>
 
 <!-- HERO -->
 <section class="hero">
-    <h2>Global Shipping & Business Promotion Made Easy</h2>
-    <p>Helping you ship worldwide and grow your business with trusted partners.</p>
-    <a href="shipping.html" class="btn btn-pay">Get Started</a>
+  <h2>Global Shipping & Business Promotion Made Easy</h2>
+  <p>Helping you ship worldwide and grow your business with trusted partners.</p>
+  <a href="shipping.html" class="btn btn-pay">Get Started</a>
 </section>
 
 <!-- SERVICES -->
 <section class="services">
-    <h3>Our Services</h3>
+  <h3>Our Services</h3>
 
-    <div class="card">
-        <h4>Shipping Assistance</h4>
-        <p>Professional guidance for international and local shipping.</p>
-        <a href="https://paystack.com/pay/z5-66wok5y"
-           class="btn btn-pay"
-           target="_blank">Pay $4.66</a>
-    </div>
+  <div class="card">
+    <h4>Shipping Assistance</h4>
+    <p>Professional guidance for international and local shipping.</p>
+    <a href="https://paystack.com/pay/z5-66wok5y"
+       class="btn btn-pay"
+       target="_blank">Pay $4.66</a>
+  </div>
 
-    <div class="card">
-        <h4>Business Promotion</h4>
-        <p>Promote your business to a global audience.</p>
-        <a href="https://paystack.com/pay/zmjk3-d9v1"
-           class="btn"
-           target="_blank">Pay $18.65</a>
-    </div>
+  <div class="card">
+    <h4>Business Promotion</h4>
+    <p>Promote your business to a global audience.</p>
+    <a href="https://paystack.com/pay/zmjk3-d9v1"
+       class="btn"
+       target="_blank">Pay $18.65</a>
+  </div>
 
-    <div class="card">
-        <h4>Premium Business Promotion</h4>
-        <p>Featured placement for maximum visibility.</p>
-        <a href="https://paystack.com/pay/rut513ub70"
-           class="btn"
-           target="_blank">Pay $46.64</a>
-    </div>
+  <div class="card">
+    <h4>Premium Business Promotion</h4>
+    <p>Featured placement for maximum visibility.</p>
+    <a href="https://paystack.com/pay/rut513ub70"
+       class="btn"
+       target="_blank">Pay $46.64</a>
+  </div>
 </section>
 
-<!-- VIDEO -->
+<!-- PROMO VIDEO -->
 <section class="hero">
-    <h2>Watch Our Promo Video</h2>
-    <video controls width="640">
-        <source src="videos/vid-01.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <h2>Watch Our Promo Video</h2>
+  <video controls width="640">
+    <source src="videos/vid-01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card">
+      <p>
+        “Addae Global helped me ship my products to the UK easily.
+        I now get international orders every week!”
+      </p>
+      <h4>— Bej Fashion Hub</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “My business video brought me new customers in just 3 days.”
+      </p>
+      <h4>— Key Experts Services</h4>
+    </div>
+
+  </div>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Addae-Global Services | All Rights Reserved</p>
+  <p>© 2026 Addae-Global Services | All Rights Reserved</p>
 
-    <a href="https://wa.me/233556845227?text=Hello%20Addae%20Global%20Services,%20I%20need%20assistance."
-       class="Whatsapp-float"
-       target="_blank">Chat on WhatsApp</a>
+  <a href="https://wa.me/233556845227?text=Hello%20Addae%20Global%20Services,%20I%20need%20assistance."
+     class="Whatsapp-float"
+     target="_blank">Chat on WhatsApp</a>
 </footer>
 
-<!-- JS MUST BE HERE -->
+<!-- JS -->
 <script src="js/media-popup.js"></script>
 
 </body>

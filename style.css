@@ -298,3 +298,137 @@ footer {
     color: #fff;
     cursor: pointer;
 }
+
+/* ===== FEATURED BUSINESS ===== */
+.featured-business {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0aa63f, #0d6efd);
+  color: #fff;
+  text-align: center;
+}
+
+.featured-card {
+  max-width: 900px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  color: #333;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.featured-card img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.featured-info {
+  padding: 30px;
+  flex: 1;
+  text-align: left;
+}
+
+.featured-info h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.verified {
+  color: #0aa63f;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* ===== TRENDING VIDEO FEED ===== */
+.video-feed {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.video-grid video {
+  width: 100%;
+  border-radius: 14px;
+  background: #000;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-style: normal;
+  color: #0aa63f;
+}
+
+/* ===== PROMO GRID HOVER EFFECT ===== */
+.promo-card:hover img,
+.promo-card:hover video {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* ===== MEDIA POPUP FIX ===== */
+#media-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+#media-popup.active {
+  display: flex;
+}
+
+#popup-image,
+#popup-video {
+  max-width: 90%;
+  max-height: 90%;
+  display: none;
+  border-radius: 12px;
+}
+
+/* ===== RESPONSIVE FEATURED ===== */
+@media (max-width: 768px) {
+  .featured-card {
+    flex-direction: column;
+  }
+
+  .featured-info {
+    text-align: center;
+  }
+}
+
